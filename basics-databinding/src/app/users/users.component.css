@@ -1,0 +1,12 @@
+.username-label {
+    font-size: 2rem;
+}
+
+.username-input {
+    display: block;
+    border-radius: 1rem;
+}
+
+.btn-reset {
+    margin-top: 1rem;
+}
