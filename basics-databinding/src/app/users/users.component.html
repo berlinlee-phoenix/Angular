@@ -2,15 +2,17 @@
     Username
 </label>
 <input 
-    type="text" 
+    type="text"
+    placeholder="Type username here" 
     class="username-input" 
     id="username-input"
     [(ngModel)]="username"
+    (input)="onUpdateUsername($event)"
 >
 <p>Username: {{ username }}</p>
 <button 
     class="btn btn-primary btn-reset"
-    [disabled]="username === ''"
+    [disabled]="isEmpty"
     (click)="onResetUsername()"
 >Reset Username</button>
 
